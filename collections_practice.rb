@@ -22,4 +22,16 @@ def kesha_maker($)
   array.collect{|arr| array.delete(arry[2]).insert(2,"$")}
 end
 
+def find_a(strings)
+  strings.keep_if {|arr| arr[0]=="a"}
+
+end
+
+def sum_array(array)
+  array.inject(0, :+)
+end
+
+def add_s(array)
+  array.collect{|arr| arr==array[1] ? arr:arr << "s"}
+end
   
