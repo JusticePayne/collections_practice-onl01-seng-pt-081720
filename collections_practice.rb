@@ -1,6 +1,7 @@
+
 def sort_array_asc(integers)
   integers.sort
-end
+end 
 
 def sort_array_desc(integers)
   integers.sort{|a,b| b<=>a}
@@ -18,13 +19,12 @@ def reverse_array(array)
   array.reverse
 end
 
-def kesha_maker($)
-  array.collect{|arr| array.delete(arry[2]).insert(2,"$")}
+def kesha_maker(array)
+  array.collect {|arr| arr.delete(arr[2]).insert(2,"$")}
 end
 
-def find_a(strings)
-  strings.keep_if {|arr| arr[0]=="a"}
-
+def find_a(array)
+  array.keep_if {|arr| arr[0]=="a"}
 end
 
 def sum_array(array)
@@ -32,5 +32,5 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.collect{|arr| arr==array[1] ? arr:arr << "s"}
+  array.collect{|arr| arr==array[1] ? arr:arr <<"s"}
 end
