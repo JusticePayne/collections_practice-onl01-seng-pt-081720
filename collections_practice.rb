@@ -1,8 +1,5 @@
-def sort_array_asc
-  array = [3, 8, 2]
-
-  array.sort do |a, b|
-    if a == b
-
-    end
+def sort_array_asc(integers)
+  integers.sort
 end
+
+def sort_array_desc(numbers)
